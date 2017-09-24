@@ -1,14 +1,3 @@
-///// Called when app launch
-$(function() {
-  $("#LoginBtn").click(onLoginBtn);
-  $("#RegisterBtn").click(onRegisterBtn);
-  $("#SaveBtn").click(onSaveBtn);
-  $("#EditBtn").click(onEditBtn);
-  $("#UpdateBtn").click(onUpdateBtn);
-  $("#YesBtn_logout").click(onLogoutBtn);
-  $("#YesBtn_delete").click(deleteMemo);
-});
-
 
 
 var currentMemoID;
