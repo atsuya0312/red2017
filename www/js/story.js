@@ -22,3 +22,25 @@ function setRecord(json) {
     $('#t').replaceWith(img);
    
 }
+
+function getStudy() {
+        var hostUrl= 'https://dev01.dstn.club/dataspider/trigger/study';
+        var param1 = "user";
+        var param2 = "1";
+        var param3 = "1";
+        var data = {"userid" : param1, "questionid" : param2, "ansid":param3 };
+        $.ajax({
+            url: hostUrl,
+            type:'POST',
+            dataType: 'json',
+            //data : JSON.stringify(data),
+            data : data,
+            success: function(data) {
+                alert("success");
+                alert(data);
+            },
+            error: function(a, b, c) {
+                alert(b);
+            }
+        });
+}

@@ -25,6 +25,7 @@ console.log(MC);
 function onLoginBtn()
 {
     setRecord(json1);
+
 /*
   var email = $("#login_email").val();
   var password = $("#login_password").val();
